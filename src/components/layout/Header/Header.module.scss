@@ -1,0 +1,161 @@
+@import '@/styles/variables.scss';
+
+.header {
+  padding: 1.6rem 0 .8rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: $background-primary-enabled-light;
+}
+
+.headerFixed {
+  padding: 1.6rem 0 .8rem 0;
+  border-bottom: .1rem solid $border-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: $background-primary-enabled-light;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+
+  @media(max-width: 599px) {
+    display: none;
+  }
+}
+
+.containerMobile {
+  display: none;
+
+  @media (max-width: 599px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.4rem;
+  }
+}
+
+.logo {
+  height: 3rem;
+
+  & > svg {
+    height: 3rem;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+
+  @media(max-width: 904px) {
+    display: none;
+  }
+}
+
+.control {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.burger {
+  position: relative;
+}
+
+.burgerIcon {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  width: 3.2rem;
+  height: 3.2rem;
+
+  &.active {
+    transform: rotate(45deg);
+  }
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: $content-secondary-enabled-dark;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.top {
+  stroke-dasharray: 40 121;
+}
+
+.bottom {
+  stroke-dasharray: 40 121;
+}
+
+.burgerIcon.active .top {
+  stroke-dashoffset: -68px;
+}
+
+.burgerIcon.active .bottom {
+  stroke-dashoffset: -68px;
+}
+
+.burgerPopup {
+  width: auto;
+  max-width: calc(100vw - 3.2rem);
+  overflow-y: scroll;
+  padding: 1.6rem;
+  border-radius: .8rem;
+  background: $background-primary-enabled-light;
+  box-shadow: 0 1rem 2rem 0 rgba(111, 111, 111, .5);
+
+  position: absolute;
+  left: 0;
+  top: 4.8rem;
+  z-index: 15;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.6rem;
+
+  & > * {
+    width: 100%;
+  }
+}
+
+.burgerDivider {
+  height: .1rem;
+  width: 100%;
+  background: $border-color;
+}
+
+.burgerPopupButton {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: .8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  & > span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

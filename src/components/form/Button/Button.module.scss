@@ -1,0 +1,139 @@
+@import '@/styles/variables';
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  border-radius: .8rem;
+
+  & > svg{
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+.primary {
+  color: $content-primary-enabled-light;
+  background: $content-accent-enabled-dark;
+  border: .1rem solid $content-accent-enabled-dark;
+
+  & > svg * {
+    fill: $content-primary-enabled-light;
+  }
+
+  &:hover {
+    background: $content-accent-hover-dark;
+    border: .1rem solid $content-accent-hover-dark;
+  }
+
+  &:active, &:focus {
+    background: $content-accent-pressed-dark;
+    border: .1rem solid $content-accent-pressed-dark;
+  }
+
+}
+
+.secondary {
+  color: $content-accent-enabled-dark;
+  border: .1rem solid $content-accent-enabled-dark;
+  background: $content-primary-enabled-light;
+
+  & > svg * {
+    fill: $content-accent-enabled-dark;
+  }
+
+  &:hover {
+
+    color: $content-accent-hover-dark;
+    background: $background-secondary-hover-dark;
+    border: .1rem solid $content-accent-hover-dark;
+
+    & > svg * {
+      fill: $content-accent-hover-dark;
+    }
+  }
+
+  &:active, &:focus {
+    color: $content-accent-pressed-dark;
+    background: $background-secondary-pressed-dark;
+    border: .1rem solid $content-accent-pressed-dark;
+
+    & > svg * {
+      fill: $content-accent-pressed-dark;
+    }
+  }
+}
+
+.text {
+  color: $content-accent-enabled-dark;
+
+  &:hover{
+    color: $content-accent-hover-dark;
+    text-decoration: underline;
+
+    & > svg * {
+      fill: $content-accent-hover-dark;
+    }
+  }
+
+  &:active, &:focus{
+    color: $content-accent-pressed-dark;
+
+    & > svg * {
+      fill: $content-accent-pressed-dark;
+    }
+  }
+}
+
+.icon{
+  & > svg{
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $content-primary-enabled-dark;
+  }
+
+  &:hover{
+    & > svg{
+      fill: $content-primary-hover-dark;
+    }
+  }
+
+  &:active, &:focus{
+    & > svg{
+      fill: $content-primary-pressed-dark;
+    }
+  }
+}
+
+.sign{
+  flex-direction: column;
+  color: $content-secondary-enabled-dark;
+  gap: 0;
+
+  & > svg{
+    width: 2.4rem;
+    height: 2.4rem;
+
+    & * {
+      fill: $content-secondary-enabled-dark;
+    }
+
+  }
+
+  &:hover{
+    color: $content-secondary-hover-dark;
+
+    & > svg *{
+      fill: $content-secondary-hover-dark;
+    }
+  }
+
+  &:active, &:focus{
+    color: $content-secondary-pressed-dark;
+
+    & > svg *{
+      fill: $content-secondary-pressed-dark;
+    }
+  }
+}

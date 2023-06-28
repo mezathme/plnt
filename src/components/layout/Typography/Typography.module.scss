@@ -1,0 +1,132 @@
+.caption{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.largeCaption{
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.body{
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 130%;
+
+  @media(max-width: 599px){
+    line-height: 160%;
+  }
+}
+
+.base{
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 130%;
+
+  @media(max-width: 599px){
+    line-height: 160%;
+  }
+}
+
+.subtitle{
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 140%;
+
+  @media(max-width: 599px){
+    font-weight: 500;
+  }
+}
+
+.largeSubtitle{
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 140%;
+
+  @media(max-width: 1439px){
+    font-size: calc( (100vw - 59.9rem)/(143.9 - 59.9) * (1.8 - 1.6) + 1.6rem);
+  }
+
+  @media(max-width: 599px){
+    font-size: 1.6rem;
+    font-weight: 500;
+
+  }
+}
+
+.title{
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 160%;
+
+  @media(max-width: 599px){
+    line-height: 140%;
+  }
+}
+
+.secondTitle{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 160%;
+
+  @media(max-width: 599px){
+    line-height: 130%;
+  }
+}
+
+.tertiaryTitle{
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+
+  @media(max-width: 599px){
+    line-height: 130%;
+  }
+}
+
+.fourthTitle{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 160%;
+
+  @media(max-width: 1439px){
+    font-size: calc( (100vw - 59.9rem)/(143.9 - 59.9) * (3 - 2.8) + 2.8rem);
+  }
+
+  @media(max-width: 599px){
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+}
+
+.fifthTitle{
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 160%;
+
+  @media(max-width: 1439px){
+    font-size: calc( (100vw - 59.9rem)/(143.9 - 59.9) * (4 - 3) + 3rem);
+  }
+
+  @media(max-width: 599px){
+    font-size: 3rem;
+    line-height: 130%;
+  }
+}
+
+.largeTitle{
+  font-size: 6.8rem;
+  font-weight: 700;
+  line-height: 140%;
+
+  @media(max-width: 1439px){
+    font-size: calc( (100vw - 59.9rem)/(143.9 - 59.9) * (6.8 - 4.8) + 4.8rem);
+  }
+
+  @media(max-width: 599px){
+    font-size: 4.8rem;
+    line-height: 130%;
+  }
+}

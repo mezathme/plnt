@@ -1,0 +1,206 @@
+@import '@/styles/variables.scss';
+
+.rates{
+  padding: 6.4rem 0;
+  width: 100%;
+
+  @media(max-width: 599px){
+    padding: 4.2rem 0;
+  }
+}
+
+.ratesMobileTitle{
+  color: $content-accent-pressed-dark;
+  margin-bottom: 1.6rem;
+  display: none;
+
+  @media(max-width: 599px){
+    display: block;
+  }
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ratesTop{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+
+  @media(max-width: 1024px){
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  @media(max-width: 599px){
+    grid-template-columns: 1fr;
+  }
+}
+
+.ratesItem:nth-child(1){
+
+  margin: 2rem 0;
+  padding: 2.4rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media(max-width: 1024px){
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  @media(max-width: 599px){
+    grid-area: 3 / 1 / 4 / 2;
+    margin: 0;
+  }
+
+  & > .ratesTitle{
+    color: $content-secondary-enabled-dark;
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  & > .ratesList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.2rem;
+
+    width: 100%;
+    list-style: disc outside;
+    color: $content-secondary-enabled-dark;
+
+    & > li{
+      margin-left: 2.4rem;
+    }
+
+    & > li > h5{
+      font-weight: 400;
+
+    }
+  }
+}
+
+.ratesItem:nth-child(2){
+  padding: 2.4rem;
+  background: $content-accent-enabled-dark;
+  border-radius: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media(max-width: 599px){
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  & > .ratesTitle{
+    color: $content-primary-enabled-light;
+    text-align: center;
+    margin-bottom: 4.2rem;
+  }
+
+  & > .ratesList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.2rem;
+
+    list-style: disc outside ;
+    color: $content-primary-enabled-light;
+
+    & > li{
+      margin-left: 2.4rem;
+    }
+
+    & > li > h5{
+      font-weight: 400;
+
+    }
+  }
+}
+
+.ratesItem:nth-child(3){
+  margin: 2rem 0;
+  padding: 2.4rem;
+  border:.1rem solid $content-accent-enabled-dark;
+  border-radius: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @media(max-width: 599px){
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  & > .ratesTitle{
+    color: $content-accent-enabled-dark;
+    text-align: center;
+    margin-bottom: 4.2rem;
+  }
+
+  & > .ratesList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.2rem;
+
+    list-style: disc outside ;
+    color: $content-accent-pressed-dark;
+
+    & > li{
+      margin-left: 2.4rem;
+    }
+
+    & > li > h5{
+      font-weight: 400;
+
+    }
+  }
+
+  @media(max-width: 1024px){
+    margin: 0;
+  }
+}
+
+.ratesBottom{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  padding-top: 3.2rem;
+
+  @media(max-width: 599px){
+    flex-direction: column-reverse;
+    gap: 1rem;
+    & > a {
+      width: 100%;
+    }
+  }
+
+}
+
+.button{
+  padding: 1.6rem 2.4rem;
+  min-width: 21.5rem;
+  width: 21.5rem;
+
+  @media(max-width: 599px){
+    width: 100%;
+    min-width: auto;
+  }
+
+}
